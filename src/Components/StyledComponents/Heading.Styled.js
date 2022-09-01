@@ -6,7 +6,7 @@ export const Heading = styled.h1`
   ${(props) => (props.cap ? "text-transform: capitalize;" : "")}
   ${(props) => (props.uc ? "text-transform: uppercase;" : "")}
   ${(props) => (props.tc ? "text-align: center;" : "")}
-
+  
 
 `;
 

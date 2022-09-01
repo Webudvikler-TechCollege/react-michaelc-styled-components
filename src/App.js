@@ -67,8 +67,6 @@ function App() {
 
       <article>
         <Heading as="h2">forsiden</Heading>
-        <figure></figure>
-        <footer></footer>
         <Button color="green">Klik her</Button> <Button color="#ff0000">Klik her</Button>
       </article>
 
