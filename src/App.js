@@ -32,28 +32,28 @@ const Product = () => {
 
 const products = [
   {
-    name: "Product",
+    name: "Chicken",
     detail: "Lorem ipsum dolor sit amet",
     price: "19.95",
     info: "OMG This just came out today!",
     image: "https://baconmockup.com/640/360",
   },
   {
-    name: "Product 1",
+    name: "Bear",
     detail: "Lorem ipsum dolor sit amet",
     price: "25",
     info: "This is the a product from Derp corp.",
     image: "https://placebear.com/640/360",
   },
   {
-    name: "Product 2",
+    name: "Mixed",
     detail: "Lorem ipsum dolor sit amet",
     price: "129",
     info: "BOGOF",
     image: "http://placeimg.com/640/360/any",
   },
   {
-    name: "Product 3",
+    name: "En lærer",
     detail: "Lorem ipsum dolor sit amet",
     price: "219",
     info: "No srsly GTFO",
@@ -66,8 +66,7 @@ function App() {
       <FlashMessages />
 
       <article>
-        <Heading as="h2">forsiden</Heading>
-        <Button color="green">Klik her</Button> <Button color="#ff0000">Klik her</Button>
+        <Heading tc cap as="h2">forsiden</Heading>
       </article>
 
       <Main menu={<Login />} article={<Product />} aside="jeg er aside" />

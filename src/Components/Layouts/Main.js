@@ -22,9 +22,10 @@ export const MainStyled = styled.main`
 export const Main = (props) => {
   return (
     <MainStyled>
-      <nav>{props.menu}</nav>
-      <article>{props.article}</article>
-      <aside>{props.aside}</aside>
+      {/** man kan fyldes fra flere  */}
+      <nav>{props.menu}</nav>{/** props.menu er i det her tilfælde login componentet */}
+      <article>{props.article}</article>{/** props.article er i det her tilfælde produkter */}
+      <aside>{props.aside}</aside>{/** props.aside er i det her tilfælde alm. tekst */}
     </MainStyled>
   );
 };

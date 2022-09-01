@@ -5,6 +5,7 @@ import { useLoginStore } from "./useLoginStore";
 import { useNavigate } from "react-router-dom";
 import { useFlashMessageStore } from "../../FlashMessages/useFlashMessageStore";
 import appService from "../../App/Appservices/App.service";
+import { Button } from "../../StyledComponents/Styled.Buttons";
 
 const Login = () => {
   const navigate = useNavigate();
@@ -51,13 +52,13 @@ const Login = () => {
       <form onSubmit={handleSubmit(onSubmit)}>
         <input {...register("username", { required: true })} type="text" autoComplete="username" placeholder="brugernavn" />
         <input {...register("password", { required: true })} type="password" autoComplete="password" placeholder="password" />
-        <button>login</button>
+        <Button>login</Button>
       </form>
     </>
   ) : (
     <>
       {loggedIn && username}
-      <button onClick={() => handleLogOut()}> Logud</button>
+      <Button onClick={() => handleLogOut()}> Logud</Button>
     </>
   );
 };

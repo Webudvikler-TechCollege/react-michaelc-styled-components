@@ -1,13 +1,10 @@
 import styled from "styled-components";
 
 export const Heading = styled.h1`
-
   ${(props) => HandleHTag(props)};
   ${(props) => (props.cap ? "text-transform: capitalize;" : "")}
   ${(props) => (props.uc ? "text-transform: uppercase;" : "")}
   ${(props) => (props.tc ? "text-align: center;" : "")}
-  
-
 `;
 
 const HandleHTag = (props) => {
@@ -23,12 +20,33 @@ const HandleHTag = (props) => {
       
       `;
 
+    case "h3":
+      return `
+  
+        color: magenta;
+        
+        `;
+
+    case "h4":
+      return `
+    
+          color: purple;
+          
+          `;
+
     case "h5":
       return `
   
         color: blue;
         
         `;
+
+    case "h6":
+      return `
+      
+            color: red;
+            
+            `;
 
     default:
       return `
